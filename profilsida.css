@@ -61,6 +61,7 @@ body{
 #header a:hover {
     display: block;
     background-color: lightgray;
+    color: royalblue;
 }
 
 #mainContainer {
@@ -75,7 +76,19 @@ body{
 }
 
 #mainContainer div {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+#bild {
+    margin: 0px, 40px, 0px, 40px;
+    width: 30%;
+    float: right;
+    
+}
+
+#bild img{
+    width: 100%;
+    border-radius: 20px; 
 }
 
 h1 {
