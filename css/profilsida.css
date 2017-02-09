@@ -98,7 +98,7 @@ body{
 }
 
 #profilbild {
-    width: 30%;
+    width: calc(30% - 50px);
     float: right;
     
 }
@@ -115,4 +115,14 @@ h1 {
 
 #Kurser {
     clear: both;
+}
+
+#teknik {
+    width: calc(70% - 50px);
+    margin: 0 auto 0 auto;
+}
+
+#teknik img {
+    width: 100%;
+    
 }
