@@ -79,6 +79,11 @@ body{
 }
 
 
+#omMig {
+    width: calc(70% - 100px);
+    float: left;
+}
+
 #favoritfilmer {
     display: block;
     width: 30%;
@@ -92,14 +97,13 @@ body{
     float: right;
 }
 
-#bild {
-    margin: 0px, 100px, 0px, 100px;
+#profilbild {
     width: 30%;
     float: right;
     
 }
 
-#bild img{
+#profilbild img{
     width: 100%;
     border-radius: 20px; 
 }
