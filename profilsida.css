@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Slab:400,700');
 
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
 body{
     background-color: lightgray;
+    padding: 0px;
+    margin: 0px;
 }
 
 #bannerImg {
@@ -50,7 +47,7 @@ body{
 
 
 #header a {
-    padding: 3px;
+    padding: 5px;
     margin-top: 12px;
     text-decoration: none;
     color: dodgerblue;
@@ -62,6 +59,7 @@ body{
     display: block;
     background-color: lightgray;
     color: royalblue;
+    border-radius: 10px;
 }
 
 #mainContainer {
@@ -77,6 +75,20 @@ body{
 
 #mainContainer div {
     margin-bottom: 60px;
+}
+
+
+#favoritfilmer {
+    display: block;
+    width: 30%;
+    float: left;
+    margin-left: 50px;
+
+}
+
+#favoritspel {
+    width:30%;
+    float: right;
 }
 
 #bild {
