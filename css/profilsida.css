@@ -13,8 +13,8 @@ body{
 
 #bannerTitle {
     position: absolute;
-    width: 100%;
     text-align: center;
+    width: 100%;
     top: 60px;
     font-family: 'Roboto Slab', serif;
     color: white;
