@@ -6,9 +6,10 @@ $(document).ready(function(){
     //fade in elements when you scroll to them
     $(window).scroll(function(){
         $(".fadein").each(function(){
-            var elementBot = $(this).offset().top + $(this).outerHeight(true); //Get the element's bottom y coordinate
-            var windowBot = $(window).scrollTop() + $(window).height(); //get the window's bottom y coordinate
-            if(elementBot > windowBot){
+            var elementTop = $(this).offset().top; //Get the element's top most y coordinate
+            var elementBot = elementTop + $(this).outerHeight(true); //Get the element's bottom most y coordinate
+            var windowBot = $(window).scrollTop() + $(window).height(); //get the window's bottom most y coordinate
+            if(elementBot < windowBot){
                 $(this).animate({"opacity": "1"}, 700);
             }
         });
