@@ -18,7 +18,8 @@ body{
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 60px;
+    top: 0px;
+    opacity: 0;
     font-family: 'Roboto Slab', serif;
     color: white;
     font-size: 50px;
@@ -59,10 +60,10 @@ body{
 }
 
 #header a:hover {
-    display: block;
-    background-color: lightgray;
     color: royalblue;
+    background-color: lightgray;
     border-radius: 10px;
+    transition: color, background, 0.3s;
 }
 
 #mainContainer {
