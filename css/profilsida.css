@@ -67,6 +67,8 @@ body{
 }
 
 #mainContainer {
+    position: relative;
+    top: 200px;
     font-size: 20px;
     padding: 5px;
     background-color: white;
@@ -76,6 +78,7 @@ body{
     color: darkslategray;
     font-family: 'Roboto Condensed', sans-serif;
     padding: 50px;
+    border-radius: 25px;
 }
 
 #mainContainer div {
@@ -129,4 +132,8 @@ h1 {
 #teknik img {
     width: 100%;
     
+}
+
+li {
+    list-style: 
 }
