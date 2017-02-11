@@ -134,6 +134,10 @@ h1 {
     
 }
 
-li {
-    list-style: 
+#kurslista li {
+    padding: 10px;
+}
+
+.slide {
+    display: none;
 }
