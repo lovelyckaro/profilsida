@@ -111,9 +111,23 @@ a:hover {
 
 }
 
-#profilbild img{
+#profilbild a:hover {
+    background-color: white;
+}
+
+#profil {
     width: 100%;
-    border-radius: 20px; 
+    border-radius: 20px;
+}
+
+#kys {
+    width: calc(50% - 40px);
+    margin: 0 10px 0 10px;
+    float: right;
+}
+
+#cool {
+    width: 20%;
 }
 
 h1 {
@@ -135,8 +149,18 @@ h1 {
 
 }
 
+#kurslista {
+    width: 50%;
+    float: right;
+}
+
 #kurslista li {
     padding: 10px;
+}
+
+#beskrivning {
+    width: calc(50% - 50px);
+    float: left;
 }
 
 .slide {
@@ -145,5 +169,9 @@ h1 {
 
 .lista li {
     padding: 5px;
+}
+
+#Projekt {
+    clear: both;
 }
 
