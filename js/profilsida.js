@@ -29,7 +29,7 @@ $(document).ready(function(){
     });
     //slide the child of a clicked element
     $(".slideclick").click(function(){
-        $(this).children().slideToggle("slow");
+        $(this).siblings().slideToggle("slow");
     });
 });
 

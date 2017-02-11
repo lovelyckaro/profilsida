@@ -49,18 +49,20 @@ body{
     margin-top: 15px;
 }
 
-
-#header a {
-    padding: 5px;
-    margin-top: 12px;
+a {
     text-decoration: none;
     color: dodgerblue;
+    padding: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#header a {
+    margin-top: 12px;
     float: right;
     margin-right: 30px;
 }
 
-#header a:hover {
-    color: royalblue;
+a:hover {
     background-color: lightgray;
     border-radius: 10px;
     transition: color, background, 0.3s;
@@ -93,20 +95,20 @@ body{
 
 #favoritfilmer {
     display: block;
-    width: 35%;
+    width: 50%;
     float: left;
 
 }
 
 #favoritspel {
-    width:35%;
+    width:50%;
     float: right;
 }
 
 #profilbild {
     width: calc(30% - 50px);
     float: right;
-    
+
 }
 
 #profilbild img{
@@ -130,7 +132,7 @@ h1 {
 
 #teknik img {
     width: 100%;
-    
+
 }
 
 #kurslista li {
@@ -140,3 +142,8 @@ h1 {
 .slide {
     display: none;
 }
+
+.lista li {
+    padding: 5px;
+}
+
