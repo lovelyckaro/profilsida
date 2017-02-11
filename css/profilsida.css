@@ -93,14 +93,13 @@ body{
 
 #favoritfilmer {
     display: block;
-    width: 30%;
+    width: 35%;
     float: left;
-    margin-left: 50px;
 
 }
 
 #favoritspel {
-    width:30%;
+    width:35%;
     float: right;
 }
 

@@ -14,7 +14,7 @@ $(document).ready(function(){
             }
         });
     });
-    //smooth scrolling when pressing the links
+    //smooth scrolling when pressing the links, completely copy pasted, I have no clue what is actually going on
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -27,8 +27,9 @@ $(document).ready(function(){
             }
         }
     });
-    $(".slidelink").click(function(){
-        $(".slidelink").children().slideToggle("slow"); 
+    //slide the child of a clicked element
+    $(".slideclick").click(function(){
+        $(this).children().slideToggle("slow");
     });
 });
 
