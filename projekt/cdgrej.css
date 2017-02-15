@@ -1,8 +1,14 @@
 .cd {
     width: 100px;
     height: 100px;
-    background-color: white;
     position: fixed;
+}
+
+.btn {
+    width: 58px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: none;
 }
 
 #startButton {
@@ -35,23 +41,24 @@
     left: calc(50% - 130px);
 }
 
-.dButton {
-    width: 58px;
-    height: 30px;
-	margin-left: 2px;
-	margin-right: none;
-}
-
 #extremedif {
-	position: fixed;
-	width: 100%;
-	z-index: -100;
+    position: fixed;
+    width: 100%;
+    z-index: -100;
 }
 
 body {
-	background-image: url(background-image.jpg);
-	background-size: cover;
+    background-image: url(background-image.jpg);
+    background-size: cover;
 }
+
 #time_left {
-	color: white;
+    color: white;
+}
+
+#mute {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 10;
 }
