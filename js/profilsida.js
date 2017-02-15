@@ -30,6 +30,7 @@ $(document).ready(function(){
     //slide the child of a clicked element
     $(".slideclick").click(function(){
         $(this).siblings().slideToggle("slow");
+        $(this).parent().siblings().children("div").slideUp("slow");
     });
 });
 

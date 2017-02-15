@@ -163,7 +163,7 @@ h1 {
     float: left;
 }
 
-.slide {
+#kurslista div{
     display: none;
 }
 
@@ -172,6 +172,21 @@ h1 {
 }
 
 #Projekt {
+    clear: both;
+}
+
+#projektlist {
+    background-color: red;
+    width: 100%;
+}
+
+.projektobjekt {
+    width: 30%;
+    float: right;
+    padding: 10px;
+}
+
+#trash {
     clear: both;
 }
 
