@@ -68,6 +68,12 @@ a:hover {
     transition: color, background, 0.3s;
 }
 
+.imglink:hover {
+    background-color: white;
+    border-radius: 0px;
+    /*Hata inte mig för att jag gjorde det på detta sättet, jag vet att det är extremt fult*/
+}
+
 #mainContainer {
     position: relative;
     top: 200px;
@@ -175,16 +181,26 @@ h1 {
     clear: both;
 }
 
-#projektlist {
-    background-color: red;
+#projektlista {
     width: 100%;
 }
-
 .projektobjekt {
+    margin: 0 0.5% 0 0.5%;
     width: 30%;
     float: right;
-    padding: 10px;
+    padding: 0.5%;
 }
+
+.projektobjekt img {
+    width: 25%;
+    float: left;
+}
+
+.playlink {
+    float: left;
+    margin-left: 5%;
+}
+
 
 #trash {
     clear: both;
