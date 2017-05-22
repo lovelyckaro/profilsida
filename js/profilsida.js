@@ -32,6 +32,10 @@ $(document).ready(function(){
         $(this).siblings().slideToggle("slow");
         $(this).parent().siblings().children("div").slideUp("slow");
     });
+    
+    $("#hamburgerLink").click(function(){
+        $("#hamburger").slideToggle("slow");
+    });
 });
 
 
