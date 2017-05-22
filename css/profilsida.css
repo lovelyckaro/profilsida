@@ -84,6 +84,12 @@ a {
     display: none;
 }
 
+#hamburger a {
+    float: right;
+    clear: both;
+    margin-right: 30px;
+}
+
 #default a {
     margin-top: 12px;
     float: right;
@@ -99,10 +105,10 @@ a:hover {
 .imglink:hover {
     background-color: white;
     border-radius: 0px;
-    /*Hata inte mig för att jag gjorde det på detta sättet, jag vet att det är extremt fult*/
 }
 
 #mainContainer {
+    box-sizing: border-box;
     position: relative;
     top: 200px;
     font-size: 20px;
@@ -115,7 +121,9 @@ a:hover {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 50px;
     border-radius: 25px;
+    overflow: hidden;
 }
+
 
 #mainContainer div {
     margin-bottom: 60px;
@@ -249,5 +257,18 @@ h1 {
     }
     #mobileNav {
         display: inline;
+    }
+    #bannerTitle {
+        font-size: 25px;
+    }
+    #mainContainer {
+        width: 100%;
+    }
+    .projektobjekt {
+        width: 90%;
+    }
+    #kurslista, #beskrivning, #profilbild, #favoritfilmer, #favoritspel, #omMig{
+        width: 100%;
+        float: none;
     }
 }
