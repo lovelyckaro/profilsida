@@ -7,7 +7,7 @@ $(document).ready(function(){
     //fade in elements when you scroll to them
     $(window).scroll(function(){
         $(".fadein").each(function(){
-            var elementBot = $(this).offset().top + ($(this).outerHeight(true)/2); //Get the element's middle most y coordinate
+            var elementBot = $(this).offset().top + 100;
             var windowBot = $(window).scrollTop() + $(window).height(); //get the window's bottom most y coordinate
             if(elementBot < windowBot){
                 $(this).animate({opacity: "1", top: "0"}, 700);

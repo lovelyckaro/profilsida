@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Webbutveckling 1</title>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">PS-webb</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="pswebb.html">Hem</a></li>
+                        <li><a href="http://www.skolverket.se/laroplaner-amnen-och-kurser/gymnasieutbildning/gymnasieskola/sok-amnen-kurser-och-program/subject.htm?lang=sv&subjectCode=web&tos=gy">Ämnesplan</a></li>
+                        <li><a href="http://www.creativecommons.se/">Creative Commons</a></li>
+                        <li><a href="elevsidor.html">Elevsidor</a></li>
+                        <li class="active"><a href="uppgifter.html">Uppgifter</a></li>
+                        <li><a href="grunder.html">Grunder</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Uppgifter</h1>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Uppgift 1</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body"><img src="Uppgift1.jpg" class="img-responsive"></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Uppgift 2</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body"><img src="Uppgift2.png" class="img-responsive"></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Uppgift 3</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Presentation av bilder</h2>
+                                <p>Längst ner på sidan så hittar ni länkarna till bilderna som vi kommer använda i denna uppgift. Alla      bilderna är omodiferade original och därmed ganska stor i bild/fil-storlek(2,8-4,9 MB). När vi designar webbplatser vill vi gärna undvika laddningstider pga för stora bild-filer osv därför vill vi anpassa bilder till vårt ändamål.</p>
+                                <p>Skapa en mapp som ni döper till Bilder i mappen där er webbsidan ligger. Det är alltid bra att försöka samla ihop alla bilder för sig osv för att bygga upp en filstruktur på sidan. Ladda ner alla bilderna till er hårddisk.</p>
+                                <p>Sen vill ni öppna bilderna i något redigeringsprogram t.ex. Photoshop där ni kan ändra upplösning och bildstorlek. Vi vill dra ner upplösningen till 72 px/tum och bredden till 500px. Genom att bara ställa in bredden så kommer de flesta programmen automatisk räkna ut den nya höjden så att bilderna behåller sina propertioner. Spara dem i vettigt format för t.ex. JPG som är lämpligt för fotografier och med ett bra namn.</p>
+                                <p>Om det skall visas många bilder galleriet så kan det vara bra att göra en version till av bilden som är ännu mindre t.ex. bredd 100-150px, dessa bilder kan vi ha för att visa upp hela urvalet och när besökaren väljer en bild så visar vi den större versionen som laddas in för just det tillfället. Dessa småbilder brukar kallas för thumbnails.</p>
+                                <p>
+                                    <a href="http://pswebb.se/Bilder/Stora/bjorn.JPG">Björn</a>
+                                    <a href="http://pswebb.se/Bilder/Stora/get.JPG">Get</a>
+                                    <a href="http://pswebb.se/Bilder/Stora/gris.JPG">Gris</a>
+                                    <a href="http://pswebb.se/Bilder/Stora/kossor.JPG">Kossor</a>
+                                    <a href="http://pswebb.se/Bilder/Stora/noshorning.JPG">Noshörning</a>
+                                    <a href="http://pswebb.se/Bilder/Stora/savann.JPG">Savann</a>
+                                </p>
+                                <p>Använd img taggar i ditt html-dokument, och testa att lägga ut bilderna. Lek runt lite med CSS-dokumentet och se vad för styling som kan bli bra.</p>
+                                <p>Testa att göra ett bildgalleri, om du inte vet hur du gör så är det bara att googla, eller kolla direkt på w3schools</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Uppgift 4</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Färgschema och vanliga grafiska element</h2>
+                                <p>När ni planerar en ny webbsite så är det viktigt att ni har ett genomgående utseende på hela siten så att användaren känner igen sig. Man brukar prata om grafisk profil eller webbprofil där webbprofilen är specialicerat mot en webbsites utseende och användbarhet medan den vanliga grafiska profilen handlar mycket om standardutseende på dokument, logotyper osv</p>
+                                <p>Det vi behöver tänka på först och främst är färgtema och grundläggande grafiskt intryck på vår site. Vi kan arbeta i länge med färgteori osv men nu utgår vi helt enkelt från att prova oss fram till vad som känns rätt. Tänk på kontraster mellan text och bakgrund. Oftast är det enklast om man hittar en färgpalett med 2-5 färger som man håller sig. För att ta fram en färgpalett och få lite idéer så kan ni titta på länkarna nedanför.</p>
+                                <p><a href="http://www.colourlovers.com/web/trends/websites">Web color trends</a>(Colourlovers, trender)</p>
+                                <p><a href="http://paletton.com/">Paletton</a>(färghjul för framtagning av färgpalett) </p>
+                                <p><a href="https://kuler.adobe.com/sv/">Adobe Kuler</a>(Adobes färghjul)</p>
+                                <p><a href="http://www.w3schools.com/html/html_colornames.asp">W3Schools</a>(mer om färger, fortsätt 2-3 sidor med länkarna("Next chapter" i botten)</p>
+                                <hr>
+                                <p>I uppbyggnaden av en webbsida så är det vissa element som är väldigt vanliga. Vi skall titta lite på hur vi ordnar några saker i Photoshop med hjälp av lagerhantering, lagerstilar m.m.</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Headerbild (banner som ligger längst upp)</li>
+                                    <li class="list-group-item">Knappar för länkar</li>
+                                </ul>
+                                <p>Dagens uppgift är sedan att arbeta fram en webbsida om valfritt område och göra en sidstruktur, headerbild och knappar för meny till denna sidan. Själva textinnehållet är inte det viktiga i uppgiften utan ni kan använda "Lorem Ipsum"-texten nedanför för att fylla ut utrymmen där ni planerar att ha text.</p>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Uppgift 5</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Publicering</h2>
+                                <p>Det är dags att träna på att flytta vår site till ett webbhotell och validera alla våra sidor så att html/css-koden är korrekt. Ni får alla varsitt webbkonto som vi kommer använda under resten av kursen.</p>
+                                <p>För att koppla upp till ert webbkonto och föra över våra filer så kan ni använda FileZilla som finns installerat på datorerna i datorsalen. Om ni kör på era laptops får ni istället ladda ner lämpligt ftp-program t.ex. <a href="http://filezilla-project.org/download.php">FileZilla</a>. Vi går genom på lektionen hur ni skall ställa in allting korrekt i programmet.</p>
+                                <hr>
+                                <p>Ni skall sedan arbeta vidare med den sidstrukturen ni började på förra veckan fast utveckla den till en mini-site med 3-4 länkade sidor som skall dela utseende och struktur men ha olika innehåll. Sidorna skall dela på ett huvud-stylesheet(css-fil) där grundutseendet på alla sidorna läggs in. Exempel på sidor ni kan ha med:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Startsida, förstasida med välkomstinformation/bild osv</li>
+                                    <li class="list-group-item">Galleri</li>
+                                    <li class="list-group-item">Om mig/site</li>
+                                    <li class="list-group-item">Kontaktsida(lägg inte ut er korrekta mail/telefon)</li>
+                                </ul>
+                                <p>Innan ni börjar med uppgiften så skapar ni en mapp i er dator. I denna mappen skall ni spara allting som skall vara med på siten, skapa gärna en undermapp där ni lägger alla bilder så att dem ligger separat. Se till att spara html-filerna en gång innan ni börjar lägga in bilder/länkar så att det blir korrekt länkade. Undvik å,ä,ö och mellanrum i era filnamn. Er första-sida för siten skall heta "index.html"</p>
+                                <hr>
+                                <h2 class="text-center">Validering</h2>
+                                <p>Alla html-sidorna som är med på siten skall även valideras med hjälp av <a href="http://validator.w3.org/unicorn/">Unicorn hos W3C</a>. Anledningen till att vi validera våra sidor är för att kontrollera att vi har skrivit får html/css-kod korrekt så att den teoretiskt skall visas korrekt på alla läsare. En fördel/nackdel med alla webbläsare är att de är snälla i avseendet att de förlåter en hel del misstag i koden. Om det är fel så försöker webbläsare korrigera genom att visa som den tror att du menade. Problemet är att alla läsare gör detta på olika sätt.</p>
+                                <p>När ni har lagt upp era filer så tar ni helt enkelt och validerar med hjälp av URL:en(webbadressen) till sidan ni vill kontrollera. Då får ni antingen beskedet att allting är korrekt eller så får ni reda på vilka fel som finns och på vilka rader felet är. Om ni får fel så är det bara att korrigera, ladda upp filen igen och prova att validera om. </p>
+                                <p>Ett tips är att köra första valideringen i ett ganska tidigt skede så att ni inte får en chock när ni får en rapport med massa fel-indikationer. Bättre att validera ofta istället för en gång i slutet då det är enklare att korrigera allt eftersom än att gå genom en lång lista med fel.</p>
+                                <p>Utöver validering bör ni alltid titta hur era sidor ser ut i så många olika browsers(Firefox, Chrome, Explorer, Safari, Opera m.m.) som möjligt och helst även på olika OS-plattformar(windows/mac/linux)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Uppgift 6</a>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <h2 class="text-center">Användning av tabeller</h2>
+                                        <p>Ibland vill vi presentera information lite mer strukturerat än i löpande text och listor. Se exemplet till höger.</p>
+                                        <p>Förr användes tabeller för att strukturera upp designen på en webbplats men detta är något som inte används längre utan vi använder istället containers(div, head, nav osv).
+                                            Läs mer om tabeller på <a href="http://www.webdesignskolan.com/html/tabeller/tabeller.php">Webdesignskolans</a> sida.</p>
+                                        <p>Webdesignskolan lägger formateringen av tabellen direkt i html-taggen men vi skall sträva efter att lägga all formatering i vår CSS för att undvika att splittra upp "formateringskoden"</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Förnamn</th>
+                                                    <th>Efternamn</th>
+                                                    <th>Mailadress</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Love</td>
+                                                    <td>Lyckaro</td>
+                                                    <td>love@example.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Victor</td>
+                                                    <td>Bergenblock</td>
+                                                    <td>victor@example.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bengan</td>
+                                                    <td>Boss</td>
+                                                    <td>bengan@example.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jossan</td>
+                                                    <td>Meijner</td>
+                                                    <td>bengan@example.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brinken</td>
+                                                    <td>Brink</td>
+                                                    <td>brinken@example.com</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <h2 class="text-center">Tabell-uppgift</h2>
+                                <p>Du skall testa att göra en sida med två tabeller där du presenterar någon information i t.ex. du kan använda våra tidigare miniatyrbilder och sedan koppla till information var bilden är tagen, vad den föreställer och när den är tagen. Ett annat exempel är att göra en resultatlista för någon slags tävling t.ex. fotbollskupp, röstning i melodifestivalen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Uppgift 7</a>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Enkel och snygg meny</h2>
+                                <p>Vi har tidigare tittat på enklare menyer med hjälp av hover-knappar men det finns många fler varianter på menyer. Med html5 och css3 så är det så gott som vår fantasi och nivå i kodning som sätter gränserna på vilken slags meny vi kan bygga. Med hjälp av transition så kan vi får förändringar i menyerna få en animering över tid och inte bara av/på.</p>
+                                <p>Idag skall vi titta på hur <a href="https://developer.mozilla.org/en-US/docs/CSS/transition">transition</a> fungerar och hur vi kan koppla ihop det för att snygga upp en enkel dropmeny.</p>
+                                <p><a href="http://www.webbdesigndirekt.se/drop-down-menu/">Enkelt skal för dropmeny</a></p>
+                                <p><a href="http://www.cssplay.co.uk/menus/">Massa exempel på menyer</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Projekt 1</a>
+                            </h4>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Projekt 1 - Resebyrå</h2>
+                                <p>Ni skall som första bedömda projekt skapa en site för en påhittad resebyrå. Siten skall bestå av flera olika sidor där ni skall utnyttja allting vi har gått genom. All formatering skall styras med CSS-filer så att det är enkelt att ändra utseende på hela siten. Tänk på att ni kan koppla flera CSS-dokument i samma HTML-dokument.</p>
+                                <p>Saker som ska vara med:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Första sidan, välkomnar och visar upp vissa meddelanden.</li>
+                                    <li class="list-group-item">Header, gemensam för alla sidor (där det är angivet att detta är ett skolprojekt och ingen äkta resebyrå).</li>
+                                    <li class="list-group-item">Presentation av resemål och erbjudanden. Med bilder och text.</li>
+                                    <li class="list-group-item">En Om-sida för resebyrå.</li>
+                                    <li class="list-group-item">Kontaktsida med mailformulär.</li>
+                                </ul>
+                                <p>Projektets site skall ligga separat i egen mapp(projekt1) på ert webbkonto så att allting som hör till siten ligger på samma ställe. En genomtänkt och snygg design. Om ni använder bilder med CC-licens så kan ni ha licenstexterna ihop med bilderna eller på en separat licenssida. Alla interna och externa länkar skall fungera.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Projekt 2</a>
+                            </h4>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Portfolio</h2>
+                                <p>Nu när ni laddar upp fler och fler projekt till ert webbhotell så är det dags att göra det enklare att hitta bland projekten.</p>
+                                <p>Ni skall skapa en Portfolio-sida, där ni presenterar er själva med namn, klass och bild(bild inget tvång men kan vara trevligt). Sidan skall även ha något slags länksamling/meny där man skall kunna komma till startsidan på varje projekt/uppgift ni har laddat upp. Portfolions startsida skall heta index.html och ligga i er rot-mapp dvs första mappen ni kommer in i när ni kopplar upp er med ftp-programmet.</p>
+                                <p>För att det inte skall krocka med namn på html/css/bild-filer mellan projekten så skall ni se till att varje projekt/uppgift ligger i en separat mapp på webbhotellet. Om ni har döpt er portfolio-fil korrekt(index.html) och lagt den på rätt ställe på webbhotellet så skall sidan visas när ni skriver in grundadressen till ert konto t.ex. http://www.1.pswebb.se/ .</p>
+                                <p>Exempel:</p>
+                                <img src="portfolioexempel.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

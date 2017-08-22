@@ -1,0 +1,202 @@
+body {
+    color: #222;
+    font-size: 11px;
+    font-family: "Trebuchet MS", Sans-Serif;
+    background-color: lightgray;
+}
+
+#main{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    width: 900px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#leftNav{
+    background-color: #eee;
+    box-shadow: 0 4px 8px 0 #ccc;
+    float: left;
+    border-radius: 15px 0px 0px 0px;
+    padding-bottom: 223px;
+}
+
+#leftNav input{
+    border-radius: 8px;
+}
+
+#leftNav input:active{
+    
+}
+
+#links{
+    background-color: white;
+}
+
+.navLink{
+    text-align: center;
+    background-color: #eee;
+    padding: 18px;
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-bottom: 1px;
+}
+
+.navLink:hover{
+    background-color: #ccc;
+}
+
+#topNav{
+    margin-top: 25px;
+    float: right;
+    width: 700px;
+}
+
+#leftLinks{
+    float: left;
+}
+
+#rightLinks{
+    float:right;
+}
+
+.topNavLink{
+    font-size: 15px;
+    float: left;
+    margin-right: 15px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.topNavLink:hover{
+    color: #8DC740;
+    background-color: #ccc;
+}
+
+#rightContainer{
+    float: right;
+    width: 650px;
+    background-color: #eee;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0 4px 8px 0 #ccc;
+    margin: 30px 40px 0px 30px;
+}
+
+#flippedVklass{
+    -webkit-transform: rotate(-90deg);
+    font-size: 25px;
+    color: #ccc;
+    position: relative;
+    left: -300px;
+}
+
+#latestImgs{
+    background-color:white;
+    width: 85px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 7px;
+    float:right;
+    margin: 15px 10px 10px 0px;
+}
+
+#innerRightContainer{
+    width: 580px;
+    background-color: white;
+    float: right;
+}
+
+#topTitle{
+    background-color: #666;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px solid white;
+    
+}
+
+#underrubriker{
+    background-color: #8DC740;
+    height: 20px;
+    font-weight: bold;
+}
+
+#leftUnderrubrik{
+    float: left;
+    width: 350px;
+    margin: 3px;
+}
+
+#rightUnderrubrik{
+    float: right;
+    width: 175px;
+    margin: 3px;
+}
+
+#nyheter{
+    background-color: white;
+    float: left;
+    border-right: 2px solid #8DC740;
+}
+
+.nyhet{
+    padding: 5px;
+    width: 350px;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #faebcc; 
+    border-radius: 5px;
+    background-color: #fcf8e3;
+}
+
+.datum{
+    float: right;
+}
+
+.nyhetsRubrik{
+    clear: both;
+}
+
+.school{
+    font-size: 10px;
+}
+
+#schema {
+    padding-top: 5px;
+    float: right;
+    background-color: white;
+}
+
+.lektion{
+    border-radius: 3px;
+    background-color: #eee;
+    margin: 5px;
+    width: 175px;
+    padding: 3px;
+}
+
+.underlinedLink {
+    text-decoration: underline;
+}
+
+#senastInloggade{
+    clear: both;
+}
+
+#inloggRubrik{
+    padding: 3px;
+    background-color: #8DC740;
+}
+
+.profilbild{
+    border-width: 0px;
+    width: 90px;
+    height: 120px;
+    margin: 15px 11px 15px 11px;
+}
+
+.trash{
+    clear: both;
+}

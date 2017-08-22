@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Webbutveckling 1</title>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#">PS-webb</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="pswebb.html">Hem</a></li>
+                        <li><a href="http://www.skolverket.se/laroplaner-amnen-och-kurser/gymnasieutbildning/gymnasieskola/sok-amnen-kurser-och-program/subject.htm?lang=sv&subjectCode=web&tos=gy">Ämnesplan</a></li>
+                        <li><a href="http://www.creativecommons.se/">Creative Commons</a></li>
+                        <li><a href="elevsidor.html">Elevsidor</a></li>
+                        <li><a href="uppgifter.html">Uppgifter</a></li>
+                        <li class="active"><a href="grunder.html">Grunder</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Grunderna i HTML och CSS</h1>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Grundstruktur för ett HTML5 dokument</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Grundstruktur för ett HTML5 dokument</h2>
+                                <p>Varje HTML-sida behöver innehålla följande taggar som minst.
+                                    Själva sidan läggs mellan body-taggarna.</p>
+                                <p><span class="label label-primary">
+                                    &lt;!DOCTYPE html&gt;<br>&lt;html lang="sv"&gt;<br>&lt;head&gt;<br>	&lt;meta charset="utf-8"&gt;<br> 	&lt;title&gt;Titel på sidan&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;<br></span></p>
+                                <h3 class="text-center">Enkla/vanliga taggar</h3>
+                                <p>Här är några enkla html-taggar vi kan använda för att formatera text.</p>
+                                <p><span class="label label-primary">&lt;!-- KOMMENTARER --&gt;</span><br>
+                                    <span class="label label-primary">&lt;p&gt; Nytt stycke &lt;/p&gt;</span><br>	
+                                    <span class="label label-primary">&lt;h1&gt;Stor rubrik&lt;/h1&gt;</span><br>	
+                                    <span class="label label-primary">&lt;h6&gt;Liten rubrik&lt;/h6&gt;</span><br><br>
+                                    <span class="label label-primary">&lt;br&gt;</span> Ny rad OBS!Ingen sluttagg<br>
+                                    <span class="label label-primary">&lt;hr&gt;</span> Ny rad med linje som delar sidan OBS!Ingen sluttagg</p>
+                                <p>Taggar med start och stop startas och stoppas i den ordning dem läggs in. T.ex.</p>
+                                <p><span class="label label-primary">&lt;p&gt;</span><span class="label label-primary">&lt;span class="betoning"&gt;</span>Många av taggarna<span class="label label-primary">&lt;/span&gt;</span> går att styra ytterligare genom att lägga till saker i taggen men vi återkommer till detta framöver.<span class="label label-primary">&lt;/p&gt;</span></p>
+                                <h3 class="text-center">Bilder</h3>
+                                <p>För att lägga in bilder på sidan så används img-taggen.</p>
+                                <p>Viktigt att tänka på att URLen(adressen) i src-delen blir korrekt. Antingen använda absoluta referenser med hela URLen "http://www.testa.se/bild/bild.jpg" eller en relativ adress som refererar till var bilden ligger i förhållande till sidan. Ligger bilden i samma katalog som sidan så är det bara filnamnet men om det t.ex. ligger i en underkatalog vid namn Bilder så blir adressen "Bilder/filnamn.jpg".</p>
+                                <p>OBS!ngen sluttagg</p>
+                                <p><span class="label label-primary">&lt;img src="URL" alt="Text som förklarar vad bilden föreställer"&gt; </span></p>
+                                <h3 class="text-center">Länkar</h3>
+                                <p>För att kunna komma vidare från vår sida så behöver vi länka till andra sidor/annat material på vår webbplats eller till någon extern källa. För detta använder vi a-taggen, oftast ihop med href för att referera till en annan källa.</p>
+                                <p>URLen fungerar precis som med bilderna. Så antingen en absolut adress eller en relativ.</p>
+                                <p><span class="label label-primary">&lt;a href="URL"&gt;</span>Länktext<span class="label label-primary">&lt;/a&gt;</span></p>
+                                <p>Naturligtvis så kan vi lägga in t.ex. en bild istället för Länktext vilket gör att bilden får en länk och kopplar vidare när vi klickar på den.</p>
+                                <h3 class="text-center">Listor</h3>
+                                <p>För att skapa punktlistor använder vi ul-taggen och skapar sedan varje punkt med li-tagg. För numrerad lista så ersätter vi ul med ol istället.</p>
+                                <p><span class="label label-primary">&lt;ul&gt;</span><br>
+                                    <span class="label label-primary">&lt;li&gt;</span>Punkt 1<span class="label label-primary">&lt;/li&gt;</span><br>
+                                    <span class="label label-primary">&lt;li&gt;</span>Punkt 2<span class="label label-primary">&lt;/li&gt;</span><br>
+                                    <span class="label label-primary">&lt;li&gt;</span>Punkt 3<span class="label label-primary">&lt;/li&gt;</span><br>
+                                    <span class="label label-primary">&lt;/ul&gt;</span></p>
+                                <p>För att få andra varianter av punkter kan vi modifera det genom att lägga till list-type-style i vår CSS för &lt;ul&gt;-taggen.
+                                    <br>
+                                    En &quot;ordnad&quot; lista dvs numrerad får vi genom att använda &lt;ol&gt;-taggen istället för &lt;ul&gt;. Själva punkterna är fortfarande &lt;li&gt;-taggar.
+                                </p>
+                                <p>Ett vanligt sätt att bygga upp en horisontell meny är att använda punktlista där man sätter CSS-formateringen <span class="label label-info">display:inline</span> på <span class="label label-primary">&lt;li&gt;</span>-taggarna och sedan arbetar vidare därifrån.</p>
+                                <h3 class="text-center">Style-sheets (CSS)</h3>
+                                <p>Mycket av vår styrning av utseendet på sidan vill vi styra med hjälp av CSS. Styles(stilmallar) går att lägga som seperat style-sheet-dokument(filändlese .css), som ett block i vår html-filer som ett style-block eller direkt våra taggar. Att ha ett separat style-sheet är att föredra eftersom vi då enklare kan ändra inställningar som gäller på alla våra sidor på ett stället. Det går naturligtvis att kombinera de olika metoderna och de läses in i följande ordning: style-sheet -&gt; style-block -&gt; style i tagg. Detta innebär att om vi har styles som säger emot varandra så kommer den sista inlästa gälla.<br>
+                                    <br>
+                                    För att länka ett style-sheet lägger vi in följade tagg i HEAD-taggen. Eller kopplar den via Format-menyn i Dreamweaver.</p>
+                                <p><span class="label label-primary">&lt;link href="css/style.css" rel="stylesheet" type="text/css"&gt;</span><br>
+                                    <br> För att indikera vad vi vill ändra i vårt stylesheet så använder vi antingen själva tagg-namnet t.ex. h2 eller a. Alternativt så kan vi skapa klasser eller id för att identifera återkommande saker eller unika saker som skall formateras. I vårt stylesheet identiferas en klass med . före klassnamnet t.ex. .meny och för ett id så använder vi # t.ex. #bottom. I html-koden så identiferar/kopplar taggarna till sina formateringar med hjälp av id="idnamn" eller class="klassnamn". <br>
+                                    Dreamweaver är till stor hjälp med listningar av alla formateringar vi kan göra. En formatering kan se ut som följande:<br>
+                                </p>
+                                <p><span class="label label-info">body {<br>	background-color:#000;<br>	
+                                    background-image:url(&quot;tribal.jpg&quot;);<br>	font-family:Verdana, Geneva, sans-serif;<br>	color:#FFF;<br>	font-size:12px;<br>	padding-top:0px;<br>	margin-top: 0px;<br>}<br></span></p>
+                                <p><span class="label label-info">a {<br> 	text-decoration:none;<br>	color:#990000;<br>}<br>
+                                    </span></p>
+                                <p><span class="label label-info">.bottom {<br>	padding-top:8px;<br>	font-size:10px;<br>	text-align:center;<br>} <br>
+                                    </span>
+                                </p>
+                                <h3 class="text-center">Containers</h3>
+                                <p>För att strukturera upp innehållet på en sida så kan det vara bra att dela upp sidan i olika delar t.ex. banner/logga, meny, huvuddel(med inre delar), sidfot osv. HTML5 har flera olika färdiga containers som t.ex. div, nav, footer, header, article som vi kan använda. Till stor del fungerar dem på samma sätt men har med namnet en förklarligt användningsområde t.ex. nav som används för placering av huvudmenyer.<br>
+                                    <br>I början så kan vi använda div-taggen till alla våra saker så kan vi fixa till allting senare. Om vi sätter en klass/id i vår div-tagg så kan vi enkelt styra utseende och positionering i vår stylesheet.<br>
+                                </p>
+                                <h3>Webb-referens</h3>
+                                <p>Webbstandrarder när det gäller HTML/CSS sätts av W3C(World Wide Web Consortium) men det finns flera andra intressegrupper som driver på utvecklingen inom olika områden.<br>
+                                    <br><a href="http://www.w3.org/TR/html5/" target="_blank">W3C-HTML5 - referenser</a><br>
+                                    <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">CSS Reference</a> hos <em>Mozilla Developer Network</em><br><a href="http://validator.w3.org/unicorn/" target="_blank">Unicorn - validerare</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Forms</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2>Formulär</h2>
+                                <p>Om vi vill att besökaren på vår sida skall kunna mata in information på sidan som vi sedan kan använda så måste är det vanligaste sättet att erbjuda denna funktionalitet med hjälp av formulär(Forms). För att kunna bearbeta det som har matats in så bör vi behandla informationen med något slags serverscript språk som t.ex. ASP/PHP/CGI. Dessa funktioner ingår inte i kursen men vi börj veta hur vi gör ett användbart formulär.</p>
+                                <p>I HTML5 så har det tillkommit en del Forms-element(objekt) men vi kommer till största delen använda oss av de klassiska input(text, password, email, submit, radio, checkbox m.fl.), textarea och select. För att gruppera ihop vissa saker kan vi använda fieldset-taggen. Alla fälten identifieras med "name" inställning medan vi styr formatering med hjälp av class/id som vanligt.<br>
+                                    Förr var det vanligt att det kördes javascript/jscript för att kontrollera att formuläret fylls i korrekt men mycket av det kan man lösa direkt med HTML5 nu istället.</p>
+                                <p>Alla formulär startas med FORM-taggen där det även anges method(POST/GET) och action(hur/var formuläret skall behandlas).
+                                <hr>
+                                <p>Mer information om formulär:<br> 
+                                    <a href="http://www.w3.org/TR/html5/forms.html#forms" target="_blank">W3C HTML5 - Forms</a><br>
+                                    <a href="http://www.webdesignskolan.com/html/formular/formular.php" target="_blank">Webdesignskolan</a><br>
+                                    <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">w3schools</a><br>
+                                    <a href="http://diveintohtml5.info/forms.html" target="_blank">A Form of Madness</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Media</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <h2 class="text-center">Infogande av film</h2>
+                                <p>Med html5 så har det blivit mycket lättare att lägga till film/ljud-media på sin sida. Nedanför är att enkelt exempel som jag spelade in på min dator med hjälp av <a href="http://www.screencast-o-matic.com/" target="_blank">Screencast-o-matic</a> som är verktyg för att göra screencasts dvs inspelningar av vad som händer på din skärm ihop med ljud så att du kan kommentera allt. Går att köra webb-versionen eller så kan man installera själva programmet på sin dator. Med gratis-varianten så kan man spela in filmer som är max 15 minuter långa. Alla filmerna kan antingen sparas lokalt på datorn eller laddas upp via t.ex. en Youtube-kanal.</p>
+                                <div align="center" class="embed-responsive embed-responsive-16by9">
+                                    <video controls class="embed-responsive-item">
+                                        <source src="Webbutveckling.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <h3 class="text-center">Filmformat</h3>
+                                <p>Som vanligt har vi problemet med att olika browsers inte stödjer samma format. Formaten som det brukar pratas om för inbäddning med html5 är MP4, WebM och Ogg. En tabell på vilka browser som stödjer vilka filer finns t.ex. på <a href="http://www.w3schools.com/html/html5_video.asp" target="_blank">w3schools</a>, där de även går genom grunderna i att bädda in film. I grunden består det av en yttre video-tagg där det anges storlek, om man vill ha kontroller, om filmen skall startas automatiskt osv. Inne i video-taggen har vi en source-tagg för varje film-format vi lägger upp. Browsern kollar uppifrån i listan med filer och använder den första som den stödjer.</p>
+                                <p>Många mobil-kameror filmar i MP4-format och det enda som kan behövas är att dra ner filmerna i storlek då de ibland kan vara ganska överdriven storlek och även framerate går ibland att sänka. Om man vill konvertera mellan olika format så finns det bra sidor online som hjälper till med detta t.ex. <a href="http://www.online-convert.com/" target="_blank">Online-Convert</a>. Snabbt och enkelt att använda.</p>
+                                <h3 class="text-center">Youtube</h3>
+                                <p>Det går även att enkelt länka filmer från t.ex. Youtube.</p>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NwwY9y6O3hw" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h3 class="text-center">Uppgift</h3>
+                                <p>Ni skall göra en sida där ni testar att bädda in film med hjälp av egna film-filer som ni antingen filmar med mobil eller lånar en gammal film som <a href="Webbutveckling.mp4">några elever har gjort</a>. Om vi har tillgång till headset så skall ni göra en egen screen-cast där ni förklarar hur man t.ex. lägger in en bild som man sedan länkar, hur en tabell fungerar eller bygger en tvåspaltig sida med hjälp av containers(div/section osv). <br>Glöm inte att ni behöver minst två olika format på filmen för att stödja alla webbläsare.<br>Ni skall även ha med minst en Youtube-film som skall länkas in på samma sida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
