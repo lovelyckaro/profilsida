@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Webbteknik since 2011</title>
+    <link rel="stylesheet" type="text/css" href="privacy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="privacy.js"></script>
+  </head>
+  <body>
+    <div id="banner">
+      <h1>Skolweb.varberg.se, alla sidor sedan 2011</h1>
+      <button onclick="prev();">&larr; Föregående sida</button>
+      <button onclick="next();">Nästa sida &rarr;</button>
+      <form id="f">
+        <input type="number" id="inp" value="0">
+        <button type="submit" onclick="goto();">Go to</button>
+      </form>
+      <a target="_blank" href="http://www.skolweb.varberg.se/psa001" id="l">Gå in på sidan!</a>
+    </div>
+      <iframe src="http://www.skolweb.varberg.se/psa001" id="frame"></iframe>
+  </body>
+</html>
