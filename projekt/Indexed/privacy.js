@@ -1,5 +1,5 @@
 req = new XMLHttpRequest();
-req.open("GET", "http://www.skolweb.varberg.se/psa276/projekt/Indexed/text.txt", false);
+req.open("GET", "http://81.170.178.219/projekt/Indexed/text.txt", false);
 req.send(null);
 text = req.responseText;
 var arr = text.split("\n");
