@@ -1,5 +1,8 @@
 body{
+    background-color: rgb(24, 25, 31);
     background-image: url("bgimage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #top{
