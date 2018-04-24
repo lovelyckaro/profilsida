@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(24, 25, 31);
+    background-image: url("bgimage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#top{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 80px;
+}
+
+#main{
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+    background-color: rgba(60, 66, 77, 0.8);
+    color: white;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main h3{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
