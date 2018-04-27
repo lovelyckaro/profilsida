@@ -31,3 +31,10 @@ li{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+td{
+    width: 300px;
+}
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
