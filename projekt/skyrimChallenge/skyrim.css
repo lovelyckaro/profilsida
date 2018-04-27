@@ -33,7 +33,7 @@ li{
 }
 
 td{
-    width: 300px;
+    width: 20%;
 }
 
 th{
@@ -41,6 +41,7 @@ th{
 }
 
 table{
+    width:90%;
     margin-right: auto;
     margin-left: auto;
 }
