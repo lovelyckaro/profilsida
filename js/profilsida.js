@@ -1,8 +1,8 @@
 $(document).ready(function(){
     //align banner title to middle of the banner image
-    var height = $("#bannerImg").outerHeight(false) / 2 - ($("#bannerTitle").outerHeight(false) / 2) + "px";
+    var height = $("#bannerImg").outerHeight(false) / 2 - ($("#bannerTitle").outerHeight(false)) + "px";
     $("#bannerTitle").animate({top: height, opacity: "1"}, 500);
-    $("#mainContainer").animate({top: "-100px", opacity: "1"}, 800);
+    $("#mainContainer").animate({top: "-180px", opacity: "1"}, 800);
 
     //fade in elements when you scroll to them
     $(window).scroll(function(){

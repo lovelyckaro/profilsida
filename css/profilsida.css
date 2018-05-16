@@ -16,10 +16,11 @@ body{
 }
 
 #bannerImg {
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
     z-index: -10;
-    background-image: url(../images/bannerImg.jpg);
+    background-image: url(../images/bannerImg.png);
+    background-size: cover;
 }
 
 #bannerTitle {
